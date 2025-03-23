@@ -1,0 +1,54 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global" as *;
+
+.wrapper {
+  position: relative;
+  width: 5rem;
+
+  .inputBox {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding-xsmall);
+    border: 1px solid var(--color-grey-10);
+    border-radius: var(--border-radius);
+    background: var(--color-light);
+    color: var(--color-dark);
+    cursor: pointer;
+
+    .icon {
+      display: inline-flex;
+    }
+    &:hover {
+      background-color: var(--color-grey-30);
+      box-shadow: 0px 1px 2px 0px rgba(69, 69, 69, 0.251);
+    }
+    &.active {
+      background-color: var(--color-grey-20);
+    }
+  }
+
+  .menu {
+    position: absolute;
+    width: 100%;
+    margin-top: 3px;
+    border: 1px solid var(--color-grey-10);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 8px 16px 0px rgba(49, 49, 49, 0.102);
+    background: var(--color-light);
+    color: var(--color-dark);
+    overflow: hidden;
+
+    .option {
+      padding: var(--padding-vertical-xsmall);
+      text-align: left;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-grey-40);
+      }
+      &:active {
+        background-color: var(--color-grey-50);
+      }
+    }
+  }
+}

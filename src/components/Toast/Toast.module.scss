@@ -1,0 +1,21 @@
+@use "../../styles/variables" as *;
+
+.toast {
+  width: 15rem;
+  padding: var(--padding-small);
+  border-radius: 0.5rem 0.5rem 0 0;
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.3);
+
+  .message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    color: var(--color-dark);
+
+    .closeButton {
+      color: var(--color-dark);
+      cursor: pointer;
+    }
+  }
+}

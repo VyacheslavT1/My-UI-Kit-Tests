@@ -1,0 +1,33 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global" as *;
+
+.modal {
+  width: 30rem;
+  padding: var(--padding-small);
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-light);
+  box-shadow: 0 1rem 3rem 0 rgba(0, 0, 0, 0.239);
+  color: var(--color-dark);
+
+  .modalHeader {
+    padding-bottom: var(--padding-small);
+    border-bottom: 1px solid var(--color-grey-10);
+    .modalTitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      .closeButton {
+        cursor: pointer;
+        color: var(--color-dark);
+      }
+    }
+  }
+  .modalContext {
+    padding: var(--padding-vertical);
+    text-align: left;
+    line-height: var(--line-hight-medium);
+  }
+}

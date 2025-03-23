@@ -1,0 +1,29 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global" as *;
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--gap-xsmall);
+  color: var(--color-dark);
+  font-size: var(--font-size-small);
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    position: relative;
+    left: 1rem;
+    transform: translateX(50%);
+    cursor: pointer;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+  }
+}

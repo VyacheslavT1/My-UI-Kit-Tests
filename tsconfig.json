@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["@storybook/react", "node", "jest", "@testing-library/jest-dom"],
+    "lib": ["dom", "es2020"],
+    "jsx": "react-jsx"
+  },
+  "include": ["src", "global.d.ts"]
+}

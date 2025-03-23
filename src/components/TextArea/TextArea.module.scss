@@ -1,0 +1,25 @@
+@use "../../styles/variables" as *;
+@use "../../styles/global" as *;
+
+.textareaContainer {
+  .title {
+    margin: 0;
+    font-size: var(--font-size-xsmall);
+    color: var(--color-dark);
+  }
+  .textarea {
+    margin: 0;
+    padding-top: var(--padding-xsmall);
+    border: none;
+    outline: none;
+    resize: none;
+    border-bottom: 1px solid var(--color-grey-80);
+    background-color: inherit;
+    color: var(--color-dark);
+    line-height: var(--line-hight-medium);
+
+    &::placeholder {
+      color: var(--color-grey-x);
+    }
+  }
+}
